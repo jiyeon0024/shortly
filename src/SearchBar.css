@@ -1,0 +1,16 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.textInput {
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--lightGray);
+  padding: 20px;
+  width: 300px;
+}
+
+.textInput::placeholder {
+  font-weight: bold;
+}

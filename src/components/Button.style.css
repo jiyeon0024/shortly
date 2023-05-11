@@ -6,3 +6,9 @@
   color: var(--ligthBlue2);
   font-size: 15px;
 }
+
+.btn2 {
+  margin-left: 10px;
+  width: 100px;
+  font-weight: bold;
+}
