@@ -1,0 +1,11 @@
+/* style for main app not component */
+
+.nav {
+  background-color: var(--darkblue);
+  color: var(--white);
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 23px;
+}

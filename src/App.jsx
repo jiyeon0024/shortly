@@ -1,5 +1,16 @@
+import Nav from "./components/Nav.jsx";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      {/* navbar */}
+      <Nav></Nav>
+      {/* searchBar */}
+      {/* cards */}
+      {/* urlList */}
+      {/* footer */}
+    </>
+  );
 }
 
 export default App;
