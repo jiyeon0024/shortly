@@ -8,9 +8,21 @@
   outline: none;
   border: 1px solid var(--lightGray);
   padding: 20px;
-  width: 300px;
+  width: 400px;
 }
 
+.textInput:focus {
+  border: 2px solid var(--lightBlue);
+}
 .textInput::placeholder {
   font-weight: bold;
+  font-size: 15px;
+}
+
+.urlPara {
+  text-align: center;
+  color: var(--gray);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
 }

@@ -27,3 +27,33 @@
 
   margin-bottom: 50px;
 }
+
+.icon {
+  color: pink;
+}
+
+.icon1 {
+  color: var(--darkblue);
+}
+
+.wrapCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.myUrls {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.default {
+  text-align: center;
+  color: var(--gray);
+  font-style: italic;
+}
+
+

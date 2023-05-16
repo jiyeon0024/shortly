@@ -1,0 +1,75 @@
+.wrapFooter {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+
+  text-align: left;
+  background-color: black;
+  /* opacity: 0.85; */
+  color: var(--white);
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.para {
+  max-width: 60ch;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.aboutUs,
+.contact,
+.subscribe {
+  padding: 30px;
+}
+.title {
+  font-size: 20px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.contactInfo {
+  line-height: 2;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.contactInfoList {
+  margin-left: 10px;
+}
+
+.footerInput {
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 20px;
+  transition: border-color 2px solid yellow;
+}
+
+.footerInput:focus {
+  border: 2px solid var(--lightBlue);
+}
+.policyPara {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.checkBox {
+  margin: 0 0 20px 0;
+  accent-color: var(--darkblue);
+}
+
+.copyRight {
+  background-color: var(--darkblue);
+  color: var(--white);
+  text-align: center;
+  padding: 20px;
+}
+
+.subPara {
+  margin-bottom: 10px;
+  margin-left: 0;
+}

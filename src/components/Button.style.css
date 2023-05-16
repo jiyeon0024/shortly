@@ -1,14 +1,35 @@
 .btn {
-  border: 1px solid var(--ligthBlue2);
+  border: 1px solid var(--white);
   background-color: var(--darkblue);
   padding: 10px;
   border-radius: 10px;
-  color: var(--ligthBlue2);
+  color: var(--white);
   font-size: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--white);
+  color: var(--darkblue);
 }
 
 .btn2 {
   margin-left: 10px;
   width: 100px;
   font-weight: bold;
+}
+
+.btn2:hover {
+  border: 2px solid var(--lightBlue);
+}
+
+.btn3 {
+  background-color: black;
+  /* opacity: 0.85; */
+  width: 100px;
+}
+
+.btn3:hover {
+  background-color: var(--darkblue);
+  color: var(--white);
 }
