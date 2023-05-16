@@ -26,3 +26,64 @@
   font-size: 14px;
   margin-top: 20px;
 }
+
+.err {
+  text-align: center;
+  color: red;
+  padding: 30px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.urlModalWrap {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapModal {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-item: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.data {
+  margin-top: 10px;
+  text-align: left;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 13px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyIcon {
+  cursor: pointer;
+}

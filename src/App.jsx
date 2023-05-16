@@ -8,6 +8,9 @@ import { BsFillLightningFill } from "react-icons/bs";
 import { BsDownload } from "react-icons/bs";
 import { FaExpeditedssl } from "react-icons/fa";
 import Footer from "./Footer.jsx";
+import { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { AiOutlineCopy } from "react-icons/ai";
 
 const content = [
   {
@@ -33,6 +36,8 @@ const content = [
 ];
 
 function App() {
+  const [list, setList] = useState([]);
+  console.log(list);
   return (
     <>
       {/* navbar */}
@@ -46,7 +51,13 @@ function App() {
           link, it's that easy!
         </h1>
         {/* searchBar */}
-        <SearchBar></SearchBar>
+        <SearchBar
+          onSuccess={(data) => {
+            console.log(data);
+            const copyList = [...list, data];
+            setList(copyList);
+          }}
+        ></SearchBar>
       </div>
 
       {/* cards */}
@@ -63,8 +74,29 @@ function App() {
       </div>
 
       {/* urlList */}
+
       <h5 className="myUrls">My URLs</h5>
-      <p className="default">You currently have no URLs saved.</p>
+      {list.length > 0 ? (
+        <div className="urlList">
+          {list.map(function (url) {
+            return (
+              <div className="url">
+                {url.new}
+                <span className="origianlUrl">
+                  {url.original.substring(0, 25)}
+                </span>
+                {console.log(url)}
+                <CopyToClipboard text={url.new}>
+                  <AiOutlineCopy className="copyIcon" size={20} />
+                </CopyToClipboard>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <p className="default">You currently have no URLs saved.</p>
+      )}
+
       {/* footer */}
       <Footer />
     </>

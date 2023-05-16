@@ -56,4 +56,24 @@
   font-style: italic;
 }
 
+.urlList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.url {
+  border: 1px solid var(--lightBlue);
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.origianlUrl {
+  color: lightGray;
+}

@@ -45,7 +45,10 @@ function Footer() {
           <p className="subPara">
             Enter your email to subscribe to our newsletter
           </p>
-          <TextInput className="footerInput"></TextInput>
+          <TextInput
+            className="footerInput"
+            placeholder={"Enter your email"}
+          ></TextInput>
           <div className="flex1">
             <input type="checkbox" className="checkBox" />
             <p className="policyPara">Agree to privacy policy</p>

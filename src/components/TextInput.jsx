@@ -1,4 +1,4 @@
-function TextInput({ type, className, placeholder, name, onChange }) {
+function TextInput({ type, className, placeholder, name, onChange, value }) {
   return (
     <input
       type={type || ""}
@@ -6,6 +6,7 @@ function TextInput({ type, className, placeholder, name, onChange }) {
       placeholder={placeholder || ""}
       name={name || ""}
       onChange={onChange}
+      value={value}
     />
   );
 }
